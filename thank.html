@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - BOVCEE Industrial Coating Services</title>
+    <link rel="stylesheet" href="thank.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="success-icon">
+            <i class="fas fa-check"></i>
+        </div>
+        
+        <h1>Thank You For Your Message!</h1>
+        
+        <p>We have received your inquiry and our team will get back to you within 24 hours. We appreciate your interest in BOVCEE Industrial Coating Services.</p>
+        
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-details">
+                <p><i class="fas fa-map-marker-alt"></i> No 3 Barr. Israel Amadi Street, Off Orluwosu Off Iwofe Road, Rumuolumeni Port Harcourt</p>
+                <p><i class="fas fa-phone"></i> +234 803 123 4567</p>
+                <p><i class="fas fa-envelope"></i> bovceecoating2000@gmail.com</p>
+            </div>
+        </div>
+        
+        <div class="btn-container">
+            <a href="home.html" class="btn btn-primary"><i class="fas fa-home"></i> Back to Home</a>
+            <a href="services.html" class="btn btn-outline"><i class="fas fa-concierge-bell"></i> Our Services</a>
+        </div>
+    </div>
+
+    <script>
+        // Simple confetti animation
+        document.addEventListener('DOMContentLoaded', function() {
+            createConfetti();
+        });
+        
+        function createConfetti() {
+            const colors = ['#ffc107', '#4caf50', '#1a365d', '#e91e63', '#2c5282'];
+            const container = document.querySelector('.thank-you-container');
+            
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.top = Math.random() * 100 + '%';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.width = (Math.random() * 10 + 5) + 'px';
+                confetti.style.height = (Math.random() * 10 + 5) + 'px';
+                confetti.style.opacity = '0';
+                confetti.style.position = 'absolute';
+                confetti.style.borderRadius = '50%';
+                container.appendChild(confetti);
+                
+                // Animate confetti
+                setTimeout(() => {
+                    confetti.style.transition = 'opacity 1s, transform 1s';
+                    confetti.style.opacity = '1';
+                    confetti.style.transform = 'translateY(20px) rotate(' + (Math.random() * 360) + 'deg)';
+                    
+                    // Remove confetti after animation
+                    setTimeout(() => {
+                        confetti.style.opacity = '0';
+                        setTimeout(() => {
+                            if (confetti.parentNode) {
+                                confetti.parentNode.removeChild(confetti);
+                            }
+                        }, 1000);
+                    }, 1500);
+                }, i * 50);
+            }
+        }
+    </script>
+</body>
+</html>

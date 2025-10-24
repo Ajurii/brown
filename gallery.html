@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BICS Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="logo.jpg" alt="BICS Logo">
+                <h1>BOVCEE INDUSTRIAL COATING SERVICES</h1>
+            </div>
+            <nav>
+                <ul>
+                     <li><a href="home.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html"class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="project.html">Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="gallery-preview">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Creative Work</h2>
+                <p>Browse through our completed projects and see the quality of our craftsmanship and attention to detail</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="project.jpg" alt="Project">
+                    <div class="gallery-overlay">
+                        <h3>Industrial Coating Project</h3>
+                        <p>Protective coating application for industrial equipment</p>
+                        <a href="Project.html">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20250911-WA0055.jpg" alt="Equipment Supply">
+                    <div class="gallery-overlay">
+                        <h3>Equipment Supply</h3>
+                        <p>High-quality industrial coating equipment</p>
+                      
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="pic1.jpg" alt="Coating">
+                    <div class="gallery-overlay">
+                        <h3>Surface Coating</h3>
+                        <p>Professional coating application process</p>
+                    
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="paint.jpg" alt="Painting">
+                    <div class="gallery-overlay">
+                        <h3>Painting</h3>
+                        <p>Professional decorative painting services</p>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <a href="#" class="btn" id="viewFullGalleryBtn">View Full Gallery <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Gallery Modal -->
+    <div id="galleryModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Full Project Gallery</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="full-gallery-grid">
+                <div class="full-gallery-item">
+                    <img src="paint.jpg" alt="Project 1">
+                </div>
+                <div class="full-gallery-item">
+                    <img src="IMG-20250911-WA0055.jpg" alt="Project 2">
+                </div>
+                <div class="full-gallery-item">
+                    <img src="IMG-20250911-WA0056.jpg" alt="Project 3">
+                </div>
+                <div class="full-gallery-item">
+                    <img src="ww.jpg" alt="Project 4">
+                </div>
+                <div class="full-gallery-item">
+                    <img src="IMG-20250911-WA0057.jpg" alt="Project 5">
+                </div>
+                <div class="full-gallery-item">
+                    <img src="IMG-20250911-WA0058.jpg" alt="Project 6">
+                </div>
+                <div class="full-gallery-item">
+                    <img src="IMG-20250911-WA0059.jpg" alt="Project 7">
+                </div>
+                <div class="full-gallery-item">
+                    <img src="pic 2.jpg" alt="Project 8">
+                </div>
+                <div class="full-gallery-item">
+                    <img src="pic1.jpg" alt="Project 9">
+                </div>
+                <div class="full-gallery-item">
+                    <img src="pic 3.jpg" alt="Project 10">
+                </div>
+                <div class="full-gallery-item">
+                    <img src="omo.jpg" alt="Project 11">
+                </div>
+                <div class="full-gallery-item">
+                    <img src="fg.jpg" alt="Project 12">
+                </div>
+                <div class="full-gallery-item">
+                    <img src="work.jpg".jpg" alt="Project 12">
+                </div>
+                <div class="full-gallery-item">
+                    <img src="we.jpg" alt="Project 12">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox for individual images -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <p id="lightbox-caption" class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BICS</h3>
+                    <p>BOVCEE INDUSTRIAL COATING SERVICES provides professional corrosion prevention and industrial coating solutions across Nigeria.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                       <li><a href="home.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Corrosion Prevention</a></li>
+                        <li><a href="services.html">Equipment Supply</a></li>
+                        <li><a href="services.html">Painting</a></li>
+                        <li><a href="services.html">Increte Stamping</a></li>
+                        <li><a href="services.html">General Contracting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> No 3 Barr. Israel Amadi Street, Off Orluwosu Off Iwofe Road, Rumuolumeni Port Harcourt</li>
+                        <li><i class="fas fa-phone"></i>+234 903 629 6532</li>
+                        <li><i class="fas fa-envelope"></i> bovceecoating2000@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 BOVCEE INDUSTRIAL COATING SERVICES. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Get the modal
+        const modal = document.getElementById("galleryModal");
+        const lightbox = document.getElementById("lightbox");
+        
+        // Get the button that opens the modal
+        const btn = document.getElementById("viewFullGalleryBtn");
+        
+        // Get the <span> element that closes the modal
+        const span = document.getElementsByClassName("close")[0];
+        const lightboxClose = document.getElementsByClassName("lightbox-close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function(event) {
+            event.preventDefault();
+            modal.style.display = "block";
+            document.body.style.overflow = "hidden"; // Prevent scrolling
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; // Enable scrolling
+        }
+        
+        lightboxClose.onclick = function() {
+            lightbox.style.display = "none";
+            document.body.style.overflow = "auto"; // Enable scrolling
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+            if (event.target == lightbox) {
+                lightbox.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+        
+        // Add click events to gallery items to open lightbox
+        const galleryItems = document.querySelectorAll('.full-gallery-item');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const imgSrc = this.querySelector('img').src;
+                const imgAlt = this.querySelector('img').alt;
+                
+                lightboxImg.src = imgSrc;
+                lightboxCaption.textContent = imgAlt;
+                lightbox.style.display = 'block';
+                document.body.style.overflow = "hidden";
+            });
+        });
+        
+        // Add keyboard controls for lightbox
+        document.addEventListener('keydown', function(event) {
+            if (lightbox.style.display === 'block') {
+                if (event.key === 'Escape') {
+                    lightbox.style.display = 'none';
+                    document.body.style.overflow = "auto";
+                }
+            }
+        });
+    </script>
+</body>
+</html>
