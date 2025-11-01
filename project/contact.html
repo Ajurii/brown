@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BICS</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="logo.jpg" alt="BICS Logo">
+                <h1>BOVCEE INDUSTRIAL COATING SERVICES</h1>
+            </div>
+            <nav>
+                <ul>
+                     <li><a href="home.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html"class="active">Contact</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="project.html">Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-preview" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for a free consultation and quote</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> No 3 Barr. Israel Amadi Street, Off Orluwosu Off Iwofe Road, Rumuolumeni Port Harcourt</p>
+                        <p><i class="fas fa-phone"></i> +234 803 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> bovceecoating2000@gmail.com</p>
+                        <p><i class="fas fa-clock"></i> Monday-Friday: 8am - 6pm</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="tel" id="phone" placeholder="Your Phone">
+                        <input type="text" id="subject" placeholder="Subject">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                        <div id="form-status" class="form-status" style="display: none;"></div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126076.254004235!2d7.358388949999999!3d9.0764785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sAbuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1689876543210!5m2!1sen!2sng" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BICS</h3>
+                    <p>BOVCEE INDUSTRIAL COATING SERVICES provides professional corrosion prevention and industrial coating solutions across Nigeria.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Corrosion Prevention</a></li>
+                        <li><a href="services.html">Equipment Supply</a></li>
+                        <li><a href="services.html">Painting</a></li>
+                        <li><a href="services.html">Increte Stamping</a></li>
+                        <li><a href="services.html">General Contracting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> No 3 Barr. Israel Amadi Street, Off Orluwosu Off Iwofe Road, Rumuolumeni Port Harcourt</li>
+                        <li><i class="fas fa-phone"></i>+234 903 629 6532</li>
+                        <li><i class="fas fa-envelope"></i> bovceecoating2000@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 BOVCEE INDUSTRIAL COATING SERVICES. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Create a hidden form to submit the data
+            const hiddenForm = document.createElement('form');
+            hiddenForm.method = 'POST';
+            hiddenForm.action = 'https://formsubmit.co/bovceecoating2000@gmail.com'; // Using FormSubmit service
+            
+            // Add hidden fields
+            const fields = {
+                '_subject': `New Contact Form Submission: ${formData.subject}`,
+                'name': formData.name,
+                'email': formData.email,
+                'phone': formData.phone,
+                'message': formData.message,
+                '_template': 'table',
+                '_captcha': 'false',
+                '_next': 'https://yourwebsite.com/thank.html' // Replace with your thank you page
+            };
+            
+            for (const key in fields) {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = key;
+                input.value = fields[key];
+                hiddenForm.appendChild(input);
+            }
+            
+            // Append to body and submit
+            document.body.appendChild(hiddenForm);
+            hiddenForm.submit();
+        });
+        
+        function showStatus(message, type) {
+            const statusEl = document.getElementById('form-status');
+            statusEl.textContent = message;
+            statusEl.className = `form-status ${type}`;
+            statusEl.style.display = 'block';
+            
+            // Hide status after 5 seconds
+            setTimeout(() => {
+                statusEl.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
